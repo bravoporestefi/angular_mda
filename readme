@@ -1,0 +1,7 @@
+Este proyecto se basa en crear una aplicación utilizando Angular y Bootstrap como base de diseño. 
+Se deben utilizar diversos componentes para construir un side-bar con enlaces que actúen como microservicios en el cliente. 
+Además, se deben consumir al menos tres APIs de terceros, utilizando el servicio de Angular para cada una. 
+La sintaxis de las directivas de control debe ser la actual y las variables y atributos de clase deben estar tipados.
+Además, se debe levantar un servidor donde al menos un componente consuma el backend, se deben incorporar al menos tres componentes traídos desde proyectos hechos con HTML, CSS y JS, pero adaptados a Angular. 
+El header debe tener un buscador funcional, y el diseño debe ser diferente al proporcionado en el documento base, aunque se puede utilizar la lógica que contiene.
+Todo el trabajo debe estar documentado y llevado a cabo en un repositorio de GitHub, con diversas ramas de desarrollo y un merge final al main. La defensa del proyecto, que durará aproximadamente 10 minutos por estudiante, será una parte importante de la calificación final.
