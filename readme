@@ -1,7 +1,41 @@
-Este proyecto se basa en crear una aplicación utilizando Angular y Bootstrap como base de diseño. 
-Se deben utilizar diversos componentes para construir un side-bar con enlaces que actúen como microservicios en el cliente. 
-Además, se deben consumir al menos tres APIs de terceros, utilizando el servicio de Angular para cada una. 
-La sintaxis de las directivas de control debe ser la actual y las variables y atributos de clase deben estar tipados.
-Además, se debe levantar un servidor donde al menos un componente consuma el backend, se deben incorporar al menos tres componentes traídos desde proyectos hechos con HTML, CSS y JS, pero adaptados a Angular. 
-El header debe tener un buscador funcional, y el diseño debe ser diferente al proporcionado en el documento base, aunque se puede utilizar la lógica que contiene.
-Todo el trabajo debe estar documentado y llevado a cabo en un repositorio de GitHub, con diversas ramas de desarrollo y un merge final al main. La defensa del proyecto, que durará aproximadamente 10 minutos por estudiante, será una parte importante de la calificación final.
+# Angular17 Bravoporestefi
+
+## Resumen del proyecto
+Este es el proyecto final del módulo de Angular, que será nuestra evaluación del segundo trimestre. A continuación, encontrarás una guía detallada sobre lo que se incluye en mi proyecto.
+
+## Cliente
+En la carpeta del cliente se desarrolla todo lo relacionado con la experiencia del usuario en la aplicación web.
+
+Para ejecutar la parte del cliente hay que primero acceder a su respectiva carpeta, y, desde la consola, ejecutar el comando. 
+
+``` 
+nmp install
+ng serve
+```
+
+Una vez ejecutados esos comandos nos encontraremos con una página que contiene:
+- Una barra de navegación en la parte del header, en la que se encuentran varios links y una barra de búsqueda funcional.
+
+- Una barra de navegación lateral en la parte izquierda de la página que contiene desplegables con todas las APIs empleadas y diversos componentes.
+
+- El elemento principal situado en el lado derecho, en el que se muestra el contenido de la página en la que nos ubicamos.
+
+- Un footer con información adicional de páginas y redes sociales de interés.
+
+
+## Servidor
+
+La carpeta del servidor contiene todo lo necesario para proporcionar servicios y datos a la parte frontend de la aplicación y gestionar la lógica del formulario contenido en la aplicación.
+
+Para ejecutar la parte del servidor hay que primero acceder a su respectiva carpeta, y, desde la consola, ejecutar el comando.
+
+``` 
+nmp install
+node .\server.js
+```
+Una vez ejecutados esos comandos, primero se instalan las dependencias del proyecto y luego se inicia el servidor.
+
+El archivo 'server.js' es el encargado de iniciar el servidor y de procesar las solicitudes que le llegan desde la parte del cliente.
+
+También tiene acceso al fichero que actúa como base de datos para visualizar, añadir, modificar y eliminar información del mismo.
+
