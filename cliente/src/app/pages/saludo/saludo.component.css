@@ -1,0 +1,10 @@
+/* CSS de componente saludo */
+
+.contenedor {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #F2AFEF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
