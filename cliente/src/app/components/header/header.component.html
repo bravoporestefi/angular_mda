@@ -14,10 +14,10 @@
             <a class="nav-link" routerLink="">Link</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="¿Qué buscas?" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
+        <div class="d-flex" role="search">
+          <input class="form-control me-2" [(ngModel)]="busqueda" type="search" placeholder="¿Qué buscas?" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" (click)="buscar()">Buscar</button>
+        </div>
       </div>
     </div>
   </nav>
