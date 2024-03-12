@@ -13,13 +13,13 @@
   }
   
   .nga-footer a {
-    color: white;
+    color: black;
     text-decoration: none
   }
   
   .nga-footer a:hover,
   .nga-footer a:focus {
-    color: white;
+    color: black;
     text-decoration: underline;
   }
   
@@ -72,10 +72,6 @@
   
   .nga-btn-github {
     background-color: #333;
-  }
-  
-  .nga-btn-gitlab {
-    background-color: #ff4500;
   }
   
   .nga-btn-linkedin {

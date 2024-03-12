@@ -7,4 +7,17 @@
     z-index: 1000; /* Establece un valor alto para asegurarte de que esté por encima */
   }
   
+  .bg-pink {
+    background-color: #F2AFEF !important; /* Código de color rosa */
+  }
+
+  .btn{
+    color:black !important;
+    border-color: black !important;
+  }
+  .btn:hover{
+    background-color: white !important;
+    color:#F2AFEF !important;
+    border-color: black !important;
+  }
   

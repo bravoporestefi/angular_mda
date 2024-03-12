@@ -1,0 +1,40 @@
+/* CSS de error */
+.contenedor {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #F2AFEF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #F2AFEF;
+    color: black;
+    border-color: black;
+    cursor: pointer;
+  }
+
+  button:hover{
+    background-color: white;
+    color:#F2AFEF;
+  }
+  button:active{
+    background-color: white !important;
+    color:#F2AFEF !important;
+  }
+
+  .camara {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    max-width: 400px; /* Establece un ancho máximo para limitar el tamaño */
+    margin: auto; /* Centra el div horizontalmente */
+  }
+  
+  video {
+    width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+    max-width: 100%; /* Asegura que el video no exceda el ancho del contenedor */
+    display: block; /* Elimina cualquier margen o relleno adicional */
+  }

@@ -1,21 +1,24 @@
 <!-- HTML de bored -->
 
-<h1>Generador de Actividad Aleatoria</h1>
+<div class="contenedor mt-5 ">
+    <h1>Generador de Actividad Aleatoria</h1>
 
-@if (activity){ <!-- Este condicional hace que si actividad es true salgan todas sus demás caracteristicas -->
-<div>
-    <h3>{{ activity.activity }}</h3>
-    <p>{{ activity.type }}</p>
-    <p>{{ activity.participants }} participantes</p>
-    <p>{{ activity.price }} €</p>
-    <p>{{ activity.link }}</p>
+    @if (activity){ <!-- Este condicional hace que si actividad es true salgan todas sus demás caracteristicas -->
+    <div class="mt-5">
+        <h2>{{ activity.activity }}</h2>
+        <p>{{ activity.type }}</p>
+        <p>{{ activity.participants }} participantes</p>
+        <p>{{ activity.price }} €</p>
+        <p>{{ activity.link }}</p>
+    </div>
+    }
+
+    @if (error){ <!-- Esto hace que si hay un error lo muestre en rojo -->
+    <div>
+        <p style="color: red;">{{ error }}</p>
+    </div>
+    }
+
+    <button class="btn btn-outline-success mt-2" (click)="getActivity()">Obtener otra actividad</button>
+    <!-- Botón para obtener otra actividad, que llama al método getActivity() al hacer clic -->
 </div>
-}
-
-@if (error){ <!-- Esto hace que si hay un error lo muestre en rojo -->
-<div>
-    <p style="color: red;">{{ error }}</p>
-</div>
-}
-
-<button (click)="getActivity()">Obtener otra actividad</button> <!-- Botón para obtener otra actividad, que llama al método getActivity() al hacer clic -->

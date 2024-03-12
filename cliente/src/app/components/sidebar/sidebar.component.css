@@ -29,7 +29,7 @@
     }
     
     .nga-btn-toggle[aria-expanded="true"] {
-      color: #0d6efd;
+      color: #33186B;
     }
     
     .nga-btn-toggle[aria-expanded="true"]::before {
@@ -46,7 +46,7 @@
     
     .nga-btn-toggle-nav a:hover,
     .nga-btn-toggle-nav a:focus {
-      color: #0d6efd;
+      color: #33186B;
       background-color: #cfe2ff;
       font-weight: bold;
     }
@@ -83,3 +83,14 @@
       }
     }
   
+.colo{
+  color:#F2AFEF;
+}
+
+.colo:active{
+  color:#33186B;
+}
+
+i{
+  color:#F2AFEF !important;
+}
