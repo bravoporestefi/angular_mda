@@ -1,3 +1,19 @@
 {
-    "gatos": []
+  "gatos": [
+    {
+      "_id": 1,
+      "nombre": "Pompon",
+      "color": "Azul"
+    },
+    {
+      "_id": 2,
+      "nombre": "Marila",
+      "color": "Rosa"
+    },
+    {
+      "_id": 3,
+      "nombre": "Lucas",
+      "color": "Magenta"
+    }
+  ]
 }

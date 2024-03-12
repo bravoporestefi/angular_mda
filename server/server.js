@@ -1,9 +1,18 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
+const cors = require('cors')
 
 const app = express();
 const PORT = 3000; // Puerto del servidor
+
+const corsOptions = {
+  origin: "http://localhost:4200",
+  optionsSuccessStatus: 204,
+  methods: 'GET, POST, PUT, DELETE'
+}
+
+app.use(cors(corsOptions));
 
 // Middleware para parsear datos JSON
 app.use(bodyParser.json());
@@ -17,6 +26,7 @@ app.get('/gatos', (req, res) => {
       return;
     }
     const gatos = JSON.parse(data).gatos;
+    console.log(gatos)
     res.json(gatos);
   });
 });
@@ -81,7 +91,7 @@ app.delete('/gatos/:id', (req, res) => {
       return;
     }
     const db = JSON.parse(data);
-    const index = db.gatos.findIndex(gato => gato.id === id);
+    const index = db.gatos.findIndex(gato => gato._id === id); // Cambiar gato.id a gato._id
     if (index === -1) {
       res.status(404).send('Gato no encontrado');
       return;
@@ -97,6 +107,7 @@ app.delete('/gatos/:id', (req, res) => {
     });
   });
 });
+
 
 // Iniciar el servidor
 app.listen(PORT, () => {
