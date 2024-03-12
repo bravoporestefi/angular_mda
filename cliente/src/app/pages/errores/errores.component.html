@@ -1,0 +1,14 @@
+<!--HTML de error-->
+<div class=" w-50 h-50 contenedor">
+    <h2>Introduce el número de error que quieras conocer:</h2>
+    <div class="d-flex gap-2">
+
+        <input type="number" [(ngModel)]="idError"> <!--Define un campo de entrada de tipo número que está vinculado a una variable idError en el componente TypeScript utilizando [(ngModel)].-->
+        <button (click)="buscarError()" class="btn btn-primary ">Buscar</button><!-- Define un botón que llama a la función buscarError() en el componente TypeScript cuando se hace clic. -->
+    </div>
+
+    <!-- Utiliza una estructura de control de flujo @if para mostrar una imagen si la variable img está definida en el componente TypeScript. -->
+    @if (img) {
+    <img class="img-fluid" src="{{img}}">
+    }
+</div>
