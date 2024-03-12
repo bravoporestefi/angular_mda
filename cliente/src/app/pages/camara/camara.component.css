@@ -1,4 +1,4 @@
-/* CSS de error */
+/* CSS de camara */
 .contenedor {
     max-width: 500px;
     margin: 0 auto;
@@ -27,14 +27,14 @@
   }
 
   .camara {
-    width: 100%; /* Ajusta el ancho al 100% del contenedor */
-    max-width: 400px; /* Establece un ancho máximo para limitar el tamaño */
-    margin: auto; /* Centra el div horizontalmente */
+    width: 100%; 
+    max-width: 400px; 
+    margin: auto; 
   }
   
   video {
-    width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
-    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
-    max-width: 100%; /* Asegura que el video no exceda el ancho del contenedor */
-    display: block; /* Elimina cualquier margen o relleno adicional */
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    display: block; 
   }

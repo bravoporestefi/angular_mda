@@ -1,3 +1,5 @@
+<!-- HTML del componente camara -->
+
 <div class="contenedor mt-5 ">
     <h1> Cámara </h1>
     <div class="d-flex justify-content-center gap-2 mb-2 ">
@@ -5,7 +7,10 @@
         <button (click)="closeCamera()">Cerrar Cámara</button>
     </div>
 
+    <!-- Contenedor que muestra u oculta la cámara según el valor de cameraVisible -->
     <div class="camara" [style.display]="cameraVisible ? 'block' : 'none'">
+        <!-- Elemento de vídeo para mostrar la transmisión de la cámara -->
         <video #cameraFeed autoplay playsinline></video>
     </div>
+
 </div>
