@@ -6,6 +6,7 @@ import { BoredComponent } from './pages/bored/bored.component';
 import { CamaraComponent } from './pages/camara/camara.component';
 import { WindowComponent } from './pages/window/window.component';
 import { SaludoComponent} from './pages/saludo/saludo.component';
+import { CrudComponent } from './pages/crud/crud.component';
 
 export const routes: Routes = [
 
@@ -16,6 +17,7 @@ export const routes: Routes = [
     {path:'camara', component:CamaraComponent},
     {path:'window', component:WindowComponent},
     {path:'saludo', component:SaludoComponent},
+    {path:'gatos', component:CrudComponent},
     {path: '**',redirectTo: '',pathMatch:'full' },
 
 ];
